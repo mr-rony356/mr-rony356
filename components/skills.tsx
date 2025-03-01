@@ -16,6 +16,8 @@ const fadeInAnimationVariants = {
     y: 0,
     transition: {
       delay: 0.05 * index,
+      duration: 0.4,
+      ease: [0.215, 0.61, 0.355, 1], // Cubic bezier for smooth easing
     },
   }),
 };
@@ -33,7 +35,7 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="border-2 cursor-pointer border-gray-200 rounded-2xl px-5 py-3 hover:border-gray-400 hover:-translate-y-1 dark:border-gray-700 dark:text-white/80 dark:hover:border-gray-500"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
