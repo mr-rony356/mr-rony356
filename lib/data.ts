@@ -35,12 +35,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Intern Front-End Developer",
+    location: "Montreal ,Canada",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I worked as an intern developer while studing my Computer Science degree. This gave me valuable real-world experience.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021",
+    date: "2021 - 2022",
   },
   {
     title: "Front-End Developer",
