@@ -15,8 +15,8 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.05 * index,
-      duration: 0.4,
+      delay: 0.08 * index,
+      duration: 0.3,
       ease: [0.215, 0.61, 0.355, 1], // Cubic bezier for smooth easing
     },
   }),

@@ -2,8 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import FireCoat from "@/public/FIRECOAT-Australia.png";
+import Aconomy from "@/public/ACCONOMY-Discover.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -62,18 +62,20 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "FIRECOAT Australia ",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "I worked as a full-stack developer on this Bigger project for 1 years. Its a paint company website. I'm the sole developer.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl: FireCoat,
+    href: "https://firecoat.com.au/",
   },
   {
-    title: "rmtDev",
+    title: "Aconomy Discover",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Aconomy is a platform that allows users to invest in stocks and other financial instruments. It is a web application built using React, TypeScript, and Next.js.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: Aconomy,
+    href: " https://exchange-app-xi.vercel.app/",
   },
   {
     title: "Word Analytics",
@@ -81,6 +83,7 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    href: "https://word-analytics-six.vercel.app/",
   },
 ] as const;
 
@@ -101,8 +104,6 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "Stripe",
   "PostgreSQL",
