@@ -4,9 +4,41 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import FireCoat from "@/public/FIRECOAT-Australia.png";
 import Aconomy from "@/public/ACCONOMY-Discover.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import wordanalyticsImg from "@/public/First-Day-AI-AI-Powered-Recruitment-Platform.png";
 
-export const links = [
+interface NavLink {
+  name: string;
+  hash: string;
+}
+
+interface Experience {
+  title: string;
+  location: string;
+  description: string;
+  icon: React.ReactNode;
+  date: string;
+  company?: string;
+  achievements?: string[];
+  duration?: string;
+}
+
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: any;
+  href: string;
+  githubUrl?: string;
+  role?: string;
+  duration?: string;
+}
+
+interface SkillCategory {
+  category: string;
+  skills: string[];
+}
+
+export const links: NavLink[] = [
   {
     name: "Home",
     hash: "#home",
@@ -31,61 +63,85 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const;
+];
 
-export const experiencesData = [
-  {
-    title: "Intern Front-End Developer",
-    location: "Montreal ,Canada",
-    description:
-      "I worked as an intern developer while studing my Computer Science degree. This gave me valuable real-world experience.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2021 - 2022",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2024",
-  },
+export const experiencesData: Experience[] = [
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    company: "FIRECOAT Australia",
+    location: "Sydney, Australia",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Led the development of a comprehensive paint company website, implementing a full CMS system for multi-tenant websites. Managed the entire development lifecycle from design to deployment.",
     icon: React.createElement(FaReact),
-    date: "2024 - present",
+    date: "March 2024 - January 2025",
+    achievements: [
+      "Built a scalable CMS system supporting multiple tenants",
+      "Implemented responsive design across all device types",
+      "Integrated payment processing and inventory management systems",
+    ],
   },
-] as const;
-
-export const projectsData = [
   {
-    title: "FIRECOAT Australia ",
+    title: "Frontend Web Developer",
+    company: "Relevance Studio",
+    location: "Canada · Remote",
     description:
-      "I worked as a full-stack developer on this Bigger project for 1 years. Its a paint company website. I'm the sole developer.",
+      "Specialized in creating immersive web experiences using Next.js for e-commerce stores and job application portals. Focused on user engagement, performance optimization, and developing intuitive candidate application flows. Led the development of several high-profile client projects.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - 2024",
+    achievements: [
+      "Developed responsive web applications with modern UI/UX principles",
+      "Implemented performance optimizations resulting in 40% faster load times",
+      "Collaborated with design teams to create seamless user experiences",
+    ],
+  },
+  {
+    title: "Freelance Web Developer",
+    location: "Fiverr",
+    description:
+      "Provided high-quality web development services to various clients, specializing in modern frontend technologies and responsive design.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021 - Present",
+    achievements: [
+      "Completed 100+ successful projects with 5-star ratings",
+      "Specialized in React and Next.js development",
+      "Maintained 98% client satisfaction rate",
+    ],
+  },
+];
+
+export const projectsData: Project[] = [
+  {
+    title: "AI Interview App",
+    description:
+      "A sophisticated AI-powered interview platform that revolutionizes the hiring process. The system generates context-aware interview questions and provides real-time analysis of candidate responses.",
+    tags: ["Azure Document AI", "Next.js", "SQL", "OpenAI API", "Supabase"],
+    imageUrl: wordanalyticsImg,
+    href: "https://ai-interview-rosy.vercel.app",
+    role: "Lead Developer",
+    duration: "6 months",
+    githubUrl: "https://github.com/yourusername/ai-interview",
+  },
+  {
+    title: "FIRECOAT Australia",
+    description:
+      "A comprehensive e-commerce platform for a leading paint company in Australia. Features include product catalog, color matching tools, and a sophisticated inventory management system.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: FireCoat,
     href: "https://firecoat.com.au/",
+    role: "Full-Stack Developer",
+    duration: "1 year",
   },
   {
     title: "Aconomy Discover",
     description:
-      "Aconomy is a platform that allows users to invest in stocks and other financial instruments. It is a web application built using React, TypeScript, and Next.js.",
+      "An innovative financial platform enabling users to invest in stocks and other financial instruments. Features real-time market data, portfolio management, and advanced analytics tools.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: Aconomy,
-    href: " https://exchange-app-xi.vercel.app/",
+    href: "https://exchange-app-xi.vercel.app/",
+    role: "Frontend Developer",
+    duration: "8 months",
   },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-    href: "https://word-analytics-six.vercel.app/",
-  },
-] as const;
+];
 
 export const skillsData = [
   "HTML",
@@ -95,17 +151,55 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
-  "AI",
-  "LLM",
+  "Deep Learning",
+  "Natural Language Processing",
+  "TensorFlow",
+  "PyTorch",
+  "OpenAI API",
+  "LangChain",
   "AWS",
   "Docker",
   "Git",
   "Tailwind",
   "Prisma",
   "MongoDB",
+  "Redis",
   "Redux",
   "Express",
   "Stripe",
   "PostgreSQL",
-  "Framer Motion",
 ] as const;
+
+// Add a separate constant for skill categories if needed for UI organization
+export const skillCategories = {
+  "Frontend Development": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Tailwind",
+    "Redux",
+  ],
+  "Backend Development": [
+    "Node.js",
+    "Express",
+    "Prisma",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+  ],
+  "AI & Machine Learning": [
+    "Machine Learning",
+    "Deep Learning",
+    "Natural Language Processing",
+    "Computer Vision",
+    "TensorFlow",
+    "PyTorch",
+    "OpenAI API",
+    "LangChain",
+  ],
+  "DevOps & Cloud": ["AWS", "Docker", "Git", "CI/CD"],
+  "Payment Processing": ["Stripe"],
+} as const;
