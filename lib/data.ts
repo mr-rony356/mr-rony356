@@ -152,7 +152,6 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Deep Learning",
-  "Natural Language Processing",
   "TensorFlow",
   "PyTorch",
   "OpenAI API",
@@ -193,7 +192,6 @@ export const skillCategories = {
   "AI & Machine Learning": [
     "Machine Learning",
     "Deep Learning",
-    "Natural Language Processing",
     "Computer Vision",
     "TensorFlow",
     "PyTorch",
