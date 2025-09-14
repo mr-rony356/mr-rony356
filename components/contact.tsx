@@ -7,6 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import Link from "next/link";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -23,16 +24,25 @@ export default function Contact() {
     >
       <SectionHeading>Get in Touch</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Feel free to reach out at{" "}
-        <a
-          className="underline decoration-2 underline-offset-2 hover:text-gray-950 dark:hover:text-white transition-colors"
-          href="mailto:omorfarukrony2@gmail.com"
+      <div className="text-gray-700 -mt-6 dark:text-white/80 flex flex-col items-center gap-2">
+        <p>
+          Feel free to reach out at{" "}
+          <a
+            className="underline decoration-2 underline-offset-2 hover:text-gray-950 dark:hover:text-white transition-colors"
+            href="mailto:omorfarukrony2@gmail.com"
+          >
+            omorfarukrony2@gmail.com
+          </a>{" "}
+          or send a message below.
+        </p>
+        <Link
+          href="https://wa.me/8801843526192"
+          target="_blank"
+          className="text-green-500 hover:text-green-600 transition-colors font-medium underline underline-offset-2"
         >
-          omorfarukrony2@gmail.com
-        </a>{" "}
-        or send a message below.
-      </p>
+          Chat on WhatsApp
+        </Link>
+      </div>
 
       <form
         className="mt-10 flex flex-col dark:text-black"
