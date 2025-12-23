@@ -19,30 +19,35 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        While studying  {" "}
-        <span className="font-medium">Computer Science and Engineering </span>
-        , I decided to pursue my passion for programming. I enrolled in a
-        coding bootcamp and learned <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        My passion for{" "}
+        <span className="font-medium">programming and website development</span>{" "}
+        started when I saw the amazing work of{" "}
+        <span className="font-medium">a skilled web developer</span>—a big
+        brother from my village who became my inspiration. Inspired by what code
+        can do, I started my learning journey in{" "}
+        <span className="font-medium">2021</span>, teaching myself the basics
+        and building projects from scratch. With hard work and determination, I
+        turned my skills into opportunities,{" "}
+        <span className="font-medium">freelancing</span> to gain real-world
+        experience and to{" "}
+        <span className="font-medium">pay for my own education</span>. In{" "}
+        <span className="font-medium">2023</span>, I reached an important goal
+        by getting into{" "}
+        <span className="font-medium">Daffodil International University</span>,
+        paid for entirely through my own hard work and dedication.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        admitted to a gym and play football.
+        <span className="italic">What I love most about programming</span> is
+        the excitement of problem-solving—that moment when everything clicks and
+        a solution comes up. My core stack includes{" "}
+        <span className="font-medium">
+          React, Next.js, Node.js, and MongoDB
+        </span>
+        , and I'm also good with TypeScript and Prisma. I'm always learning new
+        technologies and trying to improve my skills. Currently, I'm looking for
+        a <span className="font-medium">full-time position</span> where I can
+        work on great projects and keep growing as a software developer.
       </p>
     </motion.section>
   );

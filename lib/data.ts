@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import FireCoat from "@/public/FIRECOAT-Australia.png";
-import Aconomy from "@/public/ACCONOMY-Discover.png";
+import HousePlan from "@/public/House-plan.png";
 import wordanalyticsImg from "@/public/First-Day-AI-AI-Powered-Recruitment-Platform.png";
 
 interface NavLink {
@@ -117,29 +117,28 @@ export const projectsData: Project[] = [
     tags: ["Azure Document AI", "Next.js", "SQL", "OpenAI API", "Supabase"],
     imageUrl: wordanalyticsImg,
     href: "https://ai-interview-rosy.vercel.app",
-    role: "Lead Developer",
+    role: "Full-Stack Developer",
     duration: "6 months",
-    githubUrl: "https://github.com/yourusername/ai-interview",
   },
   {
     title: "FIRECOAT Australia",
     description:
       "A comprehensive e-commerce platform for a leading paint company in Australia. Features include product catalog, color matching tools, and a sophisticated inventory management system.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["React", "Next.js", "Payload CMS", "Tailwind"],
     imageUrl: FireCoat,
     href: "https://firecoat.com.au/",
     role: "Full-Stack Developer",
     duration: "1 year",
   },
   {
-    title: "Aconomy Discover",
+    title: "House Plans & Floor Plans",
     description:
-      "An innovative financial platform enabling users to invest in stocks and other financial instruments. Features real-time market data, portfolio management, and advanced analytics tools.",
+      "Browse The Plan Collection&#39;s over 22,000 house plans to help build your dream home! Choose from a wide variety of all architectural styles and designs.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: Aconomy,
-    href: "https://exchange-app-xi.vercel.app/",
-    role: "Frontend Developer",
-    duration: "8 months",
+    imageUrl: HousePlan,
+    href: "https://www.theplancollection.com/",
+    role: "Full-Stack Developer",
+    duration: "6 months",
   },
 ];
 
@@ -166,6 +165,7 @@ export const skillsData = [
   "Redux",
   "Express",
   "Stripe",
+  "Payrexx",
   "PostgreSQL",
 ] as const;
 
@@ -199,5 +199,5 @@ export const skillCategories = {
     "LangChain",
   ],
   "DevOps & Cloud": ["AWS", "Docker", "Git", "CI/CD"],
-  "Payment Processing": ["Stripe"],
+  "Payment Processing": ["Stripe", "Payrexx"],
 } as const;
