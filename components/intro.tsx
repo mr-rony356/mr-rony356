@@ -62,10 +62,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Rony.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
+        <span className="font-bold">Hello, I'm Rony.</span> A{" "}
+        <span className="font-bold">Full-stack Web developer</span> with{" "}
         <span className="font-bold">4 years</span> of experience. Pushing the
-        boundaries of web technology to create immersive digital experiences.
+        boundaries of web and AI technology to create immersive digital experiences.
       </motion.h1>
 
       <motion.div
